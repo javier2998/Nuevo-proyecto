@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { INICIOComponent } from './Componentes/inicio/inicio.component';
 import { NavbarComponent } from './Componentes/navbar/navbar.component';
 import { FooterComponent } from './Componentes/footer/footer.component';
+import { SobreComponent } from './sobre/sobre.component';
 
 const routes: Routes =[ 
   { path: '', redirectTo: '/inicio' , pathMatch: 'full'},
-  { path: 'inicio', component: INICIOComponent}
+  { path: 'inicio', component: INICIOComponent},
+  { path: 'sobre', component: SobreComponent}
 ]
 
 
@@ -17,7 +19,8 @@ const routes: Routes =[
   declarations: [
     AppComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    SobreComponent
   ],
   imports: [
     BrowserModule,
